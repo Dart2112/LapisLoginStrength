@@ -1,0 +1,5 @@
+name: LapisLoginStrength
+version: ${project.version}
+main: net.lapismc.lapisloginstrength.LapisLoginStrength
+depend: [LapisLogin]
+authors: [Dart2112]

@@ -1,0 +1,10 @@
+#The minimum score a password must have to be allowed
+# 0 Weak
+# 1 Fair
+# 2 Good
+# 3 Strong
+# 4 Very strong
+MinimumScore: 2
+#Do we deregister players if they already have a weak password
+#This will happen when they login
+LoginDeregister: true
