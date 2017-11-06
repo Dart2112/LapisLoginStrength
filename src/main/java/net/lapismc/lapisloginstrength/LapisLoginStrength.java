@@ -56,6 +56,9 @@ public final class LapisLoginStrength extends JavaPlugin implements Listener {
             return;
         }
         String password = e.getPassword();
+        if (!e.getLoginPlayer().checkPassword(password)) {
+            return;
+        }
         Strength s = strengthChecker.measure(password);
         if (s.getScore() < getConfig().getInt("MinimumScore")) {
             e.setCancelled(true, "your password is too weak " + s.getFeedback().getWarning());
